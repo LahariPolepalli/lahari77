@@ -1,0 +1,70 @@
+/*  these are styles for desktop/laptop view*/
+body{
+	background-color:#ff9999 ;
+	background-color: 
+}
+#parent{
+	background-color:#ffcccc ;
+	margin:5%; 
+	display: flex;
+	justify-content: space-around;
+	border-radius: 3%;
+	
+}
+.child{
+	background-color:  #ffb3b3;
+	margin: 5%;
+	text-align: center;
+	padding: 4%;
+	border-radius: 5%;
+	box-shadow: 4px 4px 4px 4px pink;
+	height: 80%;
+	width: 25%;
+
+
+}
+.child>img{
+	height: 40%;
+	width:40%;
+
+	margin: 4%;
+}
+.child:hover{
+	box-shadow: 4px 4px 4px 4px tomato;
+	background-color: #ff9999 ;
+	color: white;
+
+}
+#parent:hover{
+	box-shadow: 4px 4px 4px 4px red ;
+	
+
+	
+}
+
+/* mobile view style */
+@media screen and (min-width: 320px) and (max-width: 480px){
+#parent{
+	display: inline-block;
+	margin: 2%;
+}
+.child{
+	width: 90%;
+	margin: 2%;
+}
+p{
+	font-size: 25px;
+}
+}
+
+/* tab*/
+@media screen and (min-width: 481px) and (max-width: 720px){
+	#parent{
+		flex-wrap: wrap;
+
+
+	}
+	.child{
+		width: 60%;
+	}
+}
